@@ -1,1 +1,30 @@
-photo gallery :-
+media:
+  input: media/images
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content
+    filename: "{year}-{month}-{day}-{fields.title}.json"
+
+    fields:
+      - name: title
+        label: Title
+        type: string
+
+      - name: excerpt
+        label: Excerpt
+        type: text
+
+      - name: body
+        label: Body
+        type: rich-text
+
+      - name: date
+        label: Date
+        type: date
+
+      - name: image
+        label: Image
+        type: image
