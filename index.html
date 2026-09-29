@@ -17,10 +17,43 @@ main{max-width:1120px;margin:auto}section{padding:90px 24px;border-top:1px solid
 .visual-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}.visual{min-height:190px;position:relative;overflow:hidden;padding:22px;background:#e9e3db;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.visual .shape{position:absolute;border-radius:50%;filter:blur(.2px);opacity:.72}.visual.v1{background:linear-gradient(145deg,#eee8df,#d7d0c6)}.visual.v1 .shape{width:150px;height:150px;border:1px solid #6f665d;right:-30px;top:-25px}.visual.v2{background:linear-gradient(145deg,#ded9d1,#f3efe8)}.visual.v2 .shape{width:120px;height:180px;border:1px solid #8b8178;left:25px;top:30px;border-radius:60% 40% 55% 45%}.visual.v3{background:linear-gradient(145deg,#f1ece4,#d5cdc2)}.visual.v3 .shape{width:190px;height:70px;border:1px solid #756b62;right:-55px;bottom:30px;transform:rotate(-28deg);border-radius:50%}.visual.v4{background:linear-gradient(145deg,#d9d3cb,#eee9e1)}.visual.v4 .shape{width:90px;height:90px;border:1px solid #7d746c;left:45px;top:38px;box-shadow:50px 30px 0 -15px transparent}.visual.v5{background:linear-gradient(145deg,#eee9e2,#d8d0c5)}.visual.v5 .shape{width:170px;height:170px;border:1px dashed #756c63;left:-50px;bottom:-70px}.visual.v6{background:linear-gradient(145deg,#e0dad2,#f4f0e9)}.visual.v6 .shape{width:80px;height:150px;border:1px solid #827870;right:55px;top:18px;transform:rotate(12deg);border-radius:50%}.visual.v7{background:linear-gradient(145deg,#f0ebe4,#d4cbc0)}.visual.v7 .shape{width:130px;height:130px;border:1px solid #736a62;right:-20px;bottom:-25px}.visual.v8{background:linear-gradient(145deg,#dbd5cd,#f2ede6)}.visual.v8 .shape{width:180px;height:1px;background:#746b63;left:25px;top:70px;box-shadow:0 38px 0 #746b63,0 76px 0 #746b63}.visual .vlabel{position:relative;z-index:2;font:10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#615950}.visual .vtitle{position:relative;z-index:2;font-size:20px;line-height:1.1;max-width:170px}.essay-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.essay{border-top:1px solid var(--line);padding:25px 0}.essay p{color:#514c47}.essay .meta{margin-bottom:10px}
 @media(max-width:760px){.visual-grid,.essay-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.links{display:none}.hero-grid,.about,.grid{grid-template-columns:1fr}.hero{min-height:auto;padding:90px 24px}.hero-grid{gap:45px}.profile-frame{width:240px}h1{font-size:58px}h2{font-size:38px}}
-</style>
+/* Photo Gallery */
+.gallery {
+  padding: 80px 6%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery h2 {
+  margin-bottom: 35px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-grid img {
+    height: 220px;
+  }
+}</style>
 </head>
-</style>
-</head>
+
 
 <body>
 
@@ -180,4 +213,12 @@ main{max-width:1120px;margin:auto}section{padding:90px 24px;border-top:1px solid
 </main>
 <footer>© 2026 Zaira Imtiyaz · Psychology · Writing · Research</footer>
 <div style="text-align:center;padding:30px 20px;font-family:inherit;"><a href="https://www.linkedin.com/in/zaira-imtiyaz-a11361383?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-</body></html>
+<section class="gallery" id="gallery">
+  <div class="label">Gallery</div>
+  <h2>A little glimpse into my world.</h2>
+
+  <div class="gallery-grid">
+    <img src="media/images/IMG_3761.jpeg" alt="Zaira">
+    <img src="media/images/IMG_3762.jpeg" alt="Zaira">
+  </div>
+</section></body></html>
